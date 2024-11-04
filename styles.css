@@ -1,0 +1,148 @@
+:root {
+  /* Colors */
+
+  /* Primary */
+
+  --moderate-violet: hsl(263, 55%, 52%);
+  --light-violet: rgb(156, 106, 234);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  /* ### Neutral */
+
+  --light-gray: hsl(0, 0%, 81%);
+  --bg-color: hsl(210, 46%, 95%);
+
+  /* font sizes (translated pixels to rem*/
+  --fs-small: 0.6875rem; /*11px*/
+  --fs-med: 0.8125rem; /*13px*/
+  --fs-large: 1.25rem; /*20px*/
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--fs-med);
+  margin: 0;
+  padding: 58px 0;
+}
+
+/* FONT STYLES */
+
+.container {
+  /* width: 325px; */
+  /* padding: 23px 23px; */
+  border: 2px solid limegreen;
+  /* box-sizing: border-box; */
+  display: flex;
+  flex-direction: column;
+}
+
+.light-font {
+  color: var(--white);
+}
+
+.dark-font {
+  color: var(--very-dark-blackish-blue);
+}
+
+.light-font .name,
+.dark-font .name {
+  font-size: var(--fs-med);
+  font-weight: 500;
+}
+
+.title {
+  opacity: 50%;
+  font-size: var(--fs-small);
+}
+
+.quote {
+  font-size: var(--fs-large);
+  /* margin-top: 15px; */
+  /* margin-bottom: 20px; */
+  margin: 20px 0;
+}
+
+/* card styles */
+
+.card {
+  /* box-sizing: border-box; */
+  border-radius: 8px;
+  padding: 25px 32px;
+  margin: 12px 24px;
+  /* text-align: left; */
+  /* border: 1px solid limegreen; */
+  /* width: 328px;
+  height: 444px; */
+}
+
+/* .card-header {
+  margin-bottom: 20px;
+  border: 1px solid red;
+} */
+
+img {
+  float: left;
+  border-radius: 50%;
+  margin-right: 15px;
+  height: 28px;
+}
+
+.border-accent {
+  border: 2px solid var(--light-violet);
+}
+
+.testimonial {
+  font-weight: 500;
+  opacity: 70%;
+  line-height: 1.45;
+  /* text-align: left; */
+}
+
+.name,
+.title {
+  margin: 0;
+}
+
+.card1 {
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-position: top right 23px;
+  background-repeat: no-repeat;
+  background-color: var(--moderate-violet);
+}
+
+.card1 .testimonial {
+  padding-right: 14px;
+}
+
+.card2 {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.card3,
+.card5 {
+  background-color: var(--white);
+}
+
+.card4 {
+  background-color: var(--very-dark-blackish-blue);
+}
+
+.attribution {
+  position: relative;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
